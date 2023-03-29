@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+		<title>Test Vanila</title>
+	</head>
+	<body class="max-w-7xl my-0 mx-auto pt-6 bg-[url('./images/bg-image.jpg')] bg-no-repeat bg-cover min-h-screen px-2">
+        <p class="header-text text-center font-bold text-4xl text-purple-300 pb-3">Enter your task</p>
+
+        <input class="input-text w-3/4 border-purple-300 border-2 rounded outline-none mb-5 focus:border-purple-700 relative" />
+        <button class="input-add-btn w-1/6 border-4 border-purple-900 rounded-lg text-white opacity-100 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-xl hover:opacity-75 transition-opacity">ADD</button>
+        <p class="error-text absolute translate-x-2 -translate-y-7 text-red-600"></p>
+        <div class="items"></div>
+        <p class="text-4xl font-bold text-purple-300 text-center">Tasks amount: <span class="amount-count">0</span></p>
+        <p class="text-4xl font-bold text-purple-300 text-center">Tasks completed: <span class="completed-count">0</span></p>
+        <p class="text-4xl font-bold text-purple-300 text-center">Tasks remained: <span class="remained-count">0</span></p>
+        <template class="item-template">
+            <div class="item flex w-11/12 gap-10 border-4 rounded-lg mb-3 bg-purple-400 border-purple-900 px-2 bg-gradient-to-r from-indigo-700 to-purple-900">
+                <input class="checkbox" type="checkbox">
+                <p class="text w-3/4 m-0 p-0 text-purple-300 font-mono text-xl">Some text</p>
+                <button class="button justify-self-end border-4 w-8 rounded-lg border-purple-300 text-purple-300 bg-purple-100 bg-opacity-10 hover:bg-opacity-0 hover:border-purple-500">X</button>
+            </div>
+        </template>
+		<script defer type="module" src="./index.js"></script>
+	</body>
+</html>
