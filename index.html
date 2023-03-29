@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Test Vanila</title>
+	</head>
+	<body style="max-width: 1440px; margin: 0 auto">
+		<h1 class="counter">0</h1>
+		<button class="btn-incr">Incr</button>
+		<button class="btn-decr">Decr</button>
+
+        <input class="input-text">
+        <button class="input-add-btn">ADD</button>
+        <div class="items"></div>
+        <p>Tasks amount: <span class="amount-count">0</span></p>
+        <p>Tasks completed: <span class="completed-count">0</span></p>
+        <p>Tasks remained: <span class="remained-count">0</span></p>
+        <template class="item-template">
+            <div class="item" style="display: flex; width: 50%; gap: 40px">
+                <input class="checkbox" type="checkbox">
+                <p class="text">Some text</p>
+                <button class="button">X</button>
+            </div>
+        </template>
+		<script defer src="./index.js"></script>
+	</body>
+</html>
