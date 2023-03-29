@@ -1,24 +1,4 @@
-import Counter from './components/Counter.js';
 import TaskItem from  './components/TaskItem.js';
-
-
-// CLASSES /\/\/\/\
-// =====================================
-
-
-
-
-
-const props = {
-	text: 'counter',
-	btnIncr: 'btn-incr',
-	btnDecr: 'btn-decr',
-};
-
-// const counter = new Counter(props);
-// counter.setEvenListeners();
-
-// =============================
 
 const input = document.querySelector('.input-text');
 const addButton = document.querySelector('.input-add-btn');
@@ -65,8 +45,6 @@ const checkInput = () => {
 		return true
 	}
 }
-
-
 
 addButton.addEventListener('click', () => {
 	const data = input.value;
